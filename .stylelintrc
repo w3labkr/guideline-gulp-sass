@@ -1,0 +1,32 @@
+{
+    "extends": [
+        "stylelint-config-recommended-scss",
+        "stylelint-config-rational-order",
+        "stylelint-config-prettier-scss"
+    ],
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-order",
+        "stylelint-config-rational-order/plugin"
+    ],
+    "ignoreFiles": [
+        "**/*.js",
+        "**/*.css"
+    ],
+    "rules": {
+        "order/order": [],
+        "order/properties-order": [],
+        "plugin/rational-order": [
+            true,
+            {
+                "border-in-box-model": true,
+                "empty-line-between-groups": true
+            }
+        ],
+        "at-rule-no-unknown": null,
+        "scss/at-rule-no-unknown": true,
+        "scss/at-import-no-partial-leading-underscore": null,
+        "string-quotes": "single",
+        "indentation": 2
+    }
+}
