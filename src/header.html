@@ -8,9 +8,6 @@
 
   <title>Document</title>
 
-  <!-- stylesheets -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -30,11 +27,15 @@
   </div>
   <![endif]-->
 
+  <a class="skip-link sr-only sr-only-focusable" href="#primary">Skip to content</a>
+
   <div id="page" class="site">
 
     <header id="masthead" class="site-header">
       @@include_once('template-parts/branding.html')
-      @@include_once('template-parts/navigation.html')
+      @@include_once('template-parts/navigation.html', {
+      "templateName": "@@templateName"
+      })
     </header>
 
     <div id="content" class="site-content">
