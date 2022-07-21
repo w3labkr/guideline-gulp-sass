@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+/* Inheriting box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Fixed text size for ios */
+html,
+body {
+  text-size-adjust: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  word-break: break-all;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-moz-selection {
+  background-color: $selection-color;
+}
+::selection {
+  background-color: $selection-color;
+}
